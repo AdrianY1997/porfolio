@@ -10,13 +10,13 @@
 }
 
 .sec-btn {
-    transform: scale(.8);
+    transform: scale(1);
     cursor: pointer;
     transition: .2s;
 }
 
 .sec-btn:hover {
-    transform: scale(1);
+    transform: scale(1.2);
 }
 
 .tooltip-right {

@@ -1,11 +1,11 @@
 .collapse {
   display: none;
   -webkit-animation-name: show-fade-to-bottom;
-  animation-name: show-fade-to-bottom;
+          animation-name: show-fade-to-bottom;
   -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 #sec-nav-btn:hover .collapse {
@@ -13,13 +13,13 @@
 }
 
 .sec-btn {
-  transform: scale(0.8);
+  transform: scale(1);
   cursor: pointer;
   transition: 0.2s;
 }
 
 .sec-btn:hover {
-  transform: scale(1);
+  transform: scale(1.2);
 }
 
 .tooltip-right {
@@ -60,11 +60,9 @@
   0% {
     height: 0;
   }
-
   99% {
     height: 130px;
   }
-
   100% {
     height: auto;
   }
@@ -74,11 +72,9 @@
   0% {
     height: 0;
   }
-
   99% {
     height: 130px;
   }
-
   100% {
     height: auto;
   }
