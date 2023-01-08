@@ -4,14 +4,30 @@
     width: 2.5rem;
 }
 
-// Height
+// w h d
 
-.h-vfull {
-    height: 100vh;
+$dist: 0.25rem;
+
+@for $i from 1 through 10 {
+    .w-#{$i}r {
+        width: $dist;
+    }
+
+    .h-#{$i}r {
+        height: $dist;
+    }
+
+    $dist: $dist + $dist;
 }
+
+// Height
 
 .h-100 {
     height: 100%;
+}
+
+.h-vfull {
+    height: 100vh;
 }
 
 // Width 

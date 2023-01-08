@@ -19,8 +19,156 @@ body {
   justify-content: space-between;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .self-center {
   align-self: center;
+}
+
+.bg-logo {
+  background-color: rgb(78, 11, 11);
+}
+
+.r-1 {
+  border-radius: 0.25rem;
+}
+
+.rt-1 {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.rb-1 {
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.r-2 {
+  border-radius: 0.5rem;
+}
+
+.rt-2 {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.rb-2 {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.r-3 {
+  border-radius: 1rem;
+}
+
+.rt-3 {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.rb-3 {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.r-4 {
+  border-radius: 2rem;
+}
+
+.rt-4 {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.rb-4 {
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.r-5 {
+  border-radius: 4rem;
+}
+
+.rt-5 {
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+}
+
+.rb-5 {
+  border-bottom-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+}
+
+.r-6 {
+  border-radius: 8rem;
+}
+
+.rt-6 {
+  border-top-left-radius: 8rem;
+  border-top-right-radius: 8rem;
+}
+
+.rb-6 {
+  border-bottom-left-radius: 8rem;
+  border-bottom-right-radius: 8rem;
+}
+
+.r-7 {
+  border-radius: 16rem;
+}
+
+.rt-7 {
+  border-top-left-radius: 16rem;
+  border-top-right-radius: 16rem;
+}
+
+.rb-7 {
+  border-bottom-left-radius: 16rem;
+  border-bottom-right-radius: 16rem;
+}
+
+.r-8 {
+  border-radius: 32rem;
+}
+
+.rt-8 {
+  border-top-left-radius: 32rem;
+  border-top-right-radius: 32rem;
+}
+
+.rb-8 {
+  border-bottom-left-radius: 32rem;
+  border-bottom-right-radius: 32rem;
+}
+
+.r-9 {
+  border-radius: 64rem;
+}
+
+.rt-9 {
+  border-top-left-radius: 64rem;
+  border-top-right-radius: 64rem;
+}
+
+.rb-9 {
+  border-bottom-left-radius: 64rem;
+  border-bottom-right-radius: 64rem;
+}
+
+.r-10 {
+  border-radius: 128rem;
+}
+
+.rt-10 {
+  border-top-left-radius: 128rem;
+  border-top-right-radius: 128rem;
+}
+
+.rb-10 {
+  border-bottom-left-radius: 128rem;
+  border-bottom-right-radius: 128rem;
 }
 
 .radius-full {
@@ -657,6 +805,10 @@ body {
   position: sticky;
 }
 
+.t-0 {
+  top: 0;
+}
+
 .b-0 {
   bottom: 0;
 }
@@ -669,12 +821,92 @@ body {
   width: 2.5rem;
 }
 
-.h-vfull {
-  height: 100vh;
+.w-1r {
+  width: 0.25rem;
+}
+
+.h-1r {
+  height: 0.25rem;
+}
+
+.w-2r {
+  width: 0.5rem;
+}
+
+.h-2r {
+  height: 0.5rem;
+}
+
+.w-3r {
+  width: 1rem;
+}
+
+.h-3r {
+  height: 1rem;
+}
+
+.w-4r {
+  width: 2rem;
+}
+
+.h-4r {
+  height: 2rem;
+}
+
+.w-5r {
+  width: 4rem;
+}
+
+.h-5r {
+  height: 4rem;
+}
+
+.w-6r {
+  width: 8rem;
+}
+
+.h-6r {
+  height: 8rem;
+}
+
+.w-7r {
+  width: 16rem;
+}
+
+.h-7r {
+  height: 16rem;
+}
+
+.w-8r {
+  width: 32rem;
+}
+
+.h-8r {
+  height: 32rem;
+}
+
+.w-9r {
+  width: 64rem;
+}
+
+.h-9r {
+  height: 64rem;
+}
+
+.w-10r {
+  width: 128rem;
+}
+
+.h-10r {
+  height: 128rem;
 }
 
 .h-100 {
   height: 100%;
+}
+
+.h-vfull {
+  height: 100vh;
 }
 
 .w-100 {
@@ -707,4 +939,12 @@ body {
 
 .text-black {
   color: black;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-white path {
+  fill: white;
 }

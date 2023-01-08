@@ -29,6 +29,7 @@
 
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/css/cog-anim.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
     <script src="https://kit.fontawesome.com/36c66f440a.js" crossorigin="anonymous"></script>
 </head>
@@ -38,7 +39,7 @@
     <header class="py-2 shadow-sm">
         <div class="container flex justify-between">
             <div>
-                <a href="#" class="flex align-center">
+                <a href="#" onclick="location.reload()" class="flex align-center">
                     <span class="me-2">
                         <img class="image-icon radius-full" src="./assets/img/static/HappyFox2.jpg" alt="">
                     </span>
@@ -60,32 +61,85 @@
         </div>
     </header>
 
-    <main class="mt-6">
-        <div class='container loader'>
-            <div class='loader_overlay'></div>
-            <div class='loader_cogs'>
-                <div class='loader_cogs__top'>
-                    <div class='top_part'></div>
-                    <div class='top_part'></div>
-                    <div class='top_part'></div>
-                    <div class='top_hole'></div>
+    <main class="pt-6 relative">
+        <div class="container">
+            <div class="mt-2 r-5 absolute t-0 ms-1 bg-logo shadow-sm" id="sec-nav-btn">
+                <div>
+                    <div class="sec-btn p-1 w-4r h-4r flex align-center justify-center">
+                        <span class="text-white">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                    </div>
                 </div>
-                <div class='loader_cogs__left'>
-                    <div class='left_part'></div>
-                    <div class='left_part'></div>
-                    <div class='left_part'></div>
-                    <div class='left_hole'></div>
+                <div id="sec-btn-g" class="collapse">
+                    <div>
+                        <div class="sec-btn p-1 w-4r h-4r flex align-center justify-center tooltip-right">
+                            <span class="text-white">
+                                <i class="fa-solid fa-home"></i>
+                            </span>
+                            <div class="tooltip-content shadow-sm">
+                                <p>Inicio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="sec-btn p-1 w-4r h-4r flex align-center justify-center tooltip-right">
+                            <span class="text-white">
+                                <i class="fa-solid fa-info-circle"></i>
+                            </span>
+                            <div class="tooltip-content shadow-sm">
+                                <p>Información</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="sec-btn p-1 w-4r h-4r flex align-center justify-center tooltip-right">
+                            <span class="text-white">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                            </span>
+                            <div class="tooltip-content shadow-sm">
+                                <p>Proyectos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="sec-btn p-1 w-4r h-4r flex align-center justify-center tooltip-right">
+                            <span class="text-white">
+                                <i class="fa-solid fa-id-card"></i>
+                            </span>
+                            <div class="tooltip-content shadow-sm">
+                                <p>Contacto</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class='loader_cogs__bottom'>
-                    <div class='bottom_part'></div>
-                    <div class='bottom_part'></div>
-                    <div class='bottom_part'></div>
-                    <div class='bottom_hole'></div>
-                </div>
-                <p>Coming soon</p>
             </div>
-            <h1>Under Construction</h1>
-            <h2>We are working in this site yet</h2>
+            <div class='loader mt-6'>
+                <div class='loader_overlay'></div>
+                <div class='loader_cogs'>
+                    <div class='loader_cogs__top'>
+                        <div class='top_part'></div>
+                        <div class='top_part'></div>
+                        <div class='top_part'></div>
+                        <div class='top_hole'></div>
+                    </div>
+                    <div class='loader_cogs__left'>
+                        <div class='left_part'></div>
+                        <div class='left_part'></div>
+                        <div class='left_part'></div>
+                        <div class='left_hole'></div>
+                    </div>
+                    <div class='loader_cogs__bottom'>
+                        <div class='bottom_part'></div>
+                        <div class='bottom_part'></div>
+                        <div class='bottom_part'></div>
+                        <div class='bottom_hole'></div>
+                    </div>
+                    <p>Coming soon</p>
+                </div>
+                <h1>Under Construction</h1>
+                <h2>We are working in this site yet</h2>
+            </div>
         </div>
     </main>
 
