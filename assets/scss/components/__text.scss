@@ -1,3 +1,19 @@
+// align
+
+.ta-center {
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .sm-ta-left {
+        text-align: left !important;
+    }
+
+    .sm-ta-right {
+        text-align: right !important;
+    }
+}
+
 // Sizes
 
 .text-min {

@@ -1,4 +1,34 @@
 .container {
-    width: 1000px;
+    width: 100%;
     margin: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) { 
+    .container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 800px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 900px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1000px;
+    }
 }
