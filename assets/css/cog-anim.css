@@ -2,7 +2,6 @@
 /* Mixins */
 body {
   height: 100vh;
-  text-align: center;
 }
 body main {
   min-height: 400px;
@@ -27,6 +26,7 @@ body .loader {
   display: flex;
   flex-direction: column;
   place-content: center;
+  text-align: center;
 }
 body .loader_overlay {
   width: 150px;

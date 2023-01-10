@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+$font:'Montserrat', sans-serif;
+$white: white;
+
+.form-control {
+    width: fit-content;
+    margin: auto;
+    padding: 1rem;
+}
+
+.input-group {
+    $dist: 0.25rem;
+    position: relative;
+    margin-bottom: 0.25rem;
+    border-bottom: 1px solid $white;
+    display: flex;
+    & input,
+    & textarea {
+        font-family: $font;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        color: $white;
+        text-indent: 1rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    & label {
+        display: flex;
+        position: absolute;
+        font-size: 9pt;
+        opacity: 0.7;
+        color: $white;
+        margin: 0.25rem 0.5rem;
+        width: 0.5rem;
+
+        & p {
+            display: flex;
+        }
+
+        & path {
+            fill: $white;
+        }
+    }
+    &:last-child {
+        border: none;
+        justify-content: center;
+        & button {
+            padding: 0.5rem 1rem;
+            margin-top: 1rem;
+            border-radius: 5px;
+            color: white;
+            border: 1px solid $white;
+            background-color: transparent;
+        }
+    }
+}

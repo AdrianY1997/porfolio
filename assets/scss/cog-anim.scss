@@ -25,7 +25,6 @@ $sub:#F98DB9;
 
 body{
   height:100vh;
-  text-align:center;
   main {
     min-height: 400px;
   }
@@ -49,6 +48,7 @@ body{
     display: flex;
     flex-direction: column;
     place-content: center;
+    text-align: center;
     &_overlay{
       width:150px;
       height:150px;
