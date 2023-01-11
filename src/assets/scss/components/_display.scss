@@ -1,0 +1,17 @@
+.flex {
+    display: flex !important;
+}
+
+.block {
+    display: block !important;
+}
+
+.o-hidden {
+    overflow: hidden;
+}
+
+@media (min-width: 576px) {
+    .sm-flex {
+        display: flex;
+    }
+}

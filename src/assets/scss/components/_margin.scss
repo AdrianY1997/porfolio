@@ -1,0 +1,35 @@
+$dist: 0.25rem;
+
+@for $i from 1 through 10 {
+    .m-#{$i} {
+        margin: $dist;
+    }
+    
+    .mx-#{$i} {
+        margin-left: $dist;
+        margin-right: $dist;
+    }
+    
+    .my-#{$i} {
+        margin-top: $dist;
+        margin-bottom: $dist;
+    }
+
+    .mt-#{$i} {
+        margin-top: $dist;
+    }
+
+    .mb-#{$i} {
+        margin-bottom: $dist;
+    }
+
+    .ms-#{$i} {
+        margin-left: $dist;
+    }
+
+    .me-#{$i} {
+        margin-right: $dist;
+    }
+
+    $dist: $dist + $dist;
+}

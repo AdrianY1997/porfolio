@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="mt-2 r-5 absolute t-0 ms-1 bg-logo shadow-sm" id="sec-nav-btn" (click)="toggleMenu()">
+        <div>
+            <div class="sec-btn p-1 w-4r h-4r flex align-center justify-center">
+                <span class="text-white">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </div>
+        </div>
+        <div id="sec-btn-g" class="collapse" id="nav-items" [ngClass]="show ? 'show' : 'hide'">
+            <div>
+                <div class="sec-btn p-1 w-4r h-4r flex align-center justify-center tooltip-right">
+                    <span class="text-white">
+                        <i class="fa-solid fa-home"></i>
+                    </span>
+                    <div class="tooltip-content shadow-sm">
+                        <p>Inicio</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="sec-btn p-1 w-4r h-4r flex align-center justify-center tooltip-right">
+                    <span class="text-white">
+                        <i class="fa-solid fa-info-circle"></i>
+                    </span>
+                    <div class="tooltip-content shadow-sm">
+                        <p>Información</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="sec-btn p-1 w-4r h-4r flex align-center justify-center tooltip-right">
+                    <span class="text-white">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                    </span>
+                    <div class="tooltip-content shadow-sm">
+                        <p>Proyectos</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="sec-btn p-1 w-4r h-4r flex align-center justify-center tooltip-right">
+                    <span class="text-white">
+                        <i class="fa-solid fa-id-card"></i>
+                    </span>
+                    <div class="tooltip-content shadow-sm">
+                        <p>Contacto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.self-center {
+    align-self: center;
+}
+
+@media (min-width: 576px) {
+    .sm-justify-between {
+        justify-content: space-between !important; 
+    }
+    
+    .sm-justify-center {
+        justify-content: center !important; 
+    }
+}
