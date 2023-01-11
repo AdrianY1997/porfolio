@@ -2,26 +2,26 @@
     outline: none;
 }
 
+#sec-nav-btn {
+    z-index: 1;
+}
+
 .collapse {
     height: 0;
-    overflow-y: hidden;
-    overflow-x: unset;
 }
 
 .collapse.show {
     animation-name: show-fade-to-bottom;
     animation-timing-function: ease-in-out;
     animation-duration: .5s;
+    height: auto;
 }
 
 .collapse.hide {
     animation-name: hide-fade-to-top;
     animation-timing-function: ease-in-out;
     animation-duration: .5s;
-}
-
-#sec-nav-btn:hover .collapse {
-    display: inherit;
+    overflow: hidden;
 }
 
 .sec-btn {
