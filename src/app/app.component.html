@@ -1,10 +1,18 @@
-<app-header></app-header>
+<div class="under-const fade {{hide}}"  [ngClass]="load ? 'hide' : 'show'">
+    <app-under-construction></app-under-construction>
+</div>
+<header class="py-2 shadow-sm">
+    <app-header></app-header>
+</header>
 <main>
-    <main class="pt-1 relative">
-        <app-nav></app-nav>
-        <app-under-construction></app-under-construction>
-        <app-contact></app-contact>
-    </main>
-
-    <app-footer></app-footer>
+    <app-nav></app-nav>
+    <app-home></app-home>
+    <app-about></app-about>
+    <app-services></app-services>
+    <app-portfolio></app-portfolio>
+    <app-pricing></app-pricing>
+    <app-contact></app-contact>
 </main>
+<footer class="shadow-sm b-0 w-100 py-2 text-min">
+    <app-footer></app-footer>
+</footer>
