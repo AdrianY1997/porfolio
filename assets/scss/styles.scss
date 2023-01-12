@@ -1,5 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
 * {
     outline: none;
+}
+
+.under-const {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background: white;
+    height: 100vh;
+}
+
+.top-1 {
+    top: 1rem;
+}
+
+header {
+    background: white;
+    position: relative;
+}
+
+body {
+    background: whitesmoke;
+}
+
+.ff-roboto-condensed {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.home-container {
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 50%, rgba(245,245,245,1) 100%);
 }
 
 #sec-nav-btn {
@@ -66,6 +98,10 @@
 .tooltip-right:hover .tooltip-content {
     left: 100%;
     opacity: 0.9;
+}
+
+.collapse:not(.show) {
+    display: inherit;
 }
 
 @keyframes show-fade-to-bottom {
