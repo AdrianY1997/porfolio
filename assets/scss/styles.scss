@@ -7,7 +7,7 @@
 .under-const {
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     background: white;
     height: 100vh;
 }
@@ -35,7 +35,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 
 }
 
 #sec-nav-btn {
-    z-index: 1;
+    z-index: 2;
 }
 
 .collapse {
@@ -102,6 +102,39 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 
 
 .collapse:not(.show) {
     display: inherit;
+}
+
+.about-img {
+    height: 200px;
+}
+
+.border-logo {
+    opacity: 1;
+}
+.portfolio div {
+    overflow: hidden;
+}
+
+.portfolio img {
+    transition: transform .5s ease;
+}
+
+.portfolio div:hover img {
+    transform: scale(1.5);
+}
+
+.portfolio div a {
+    opacity: 0;
+    transition: .5s;
+    z-index: 1;
+
+background-color: rgba(78, 11, 11, .5);
+color: white;
+text-decoration: none;
+}
+
+.portfolio div a:hover {
+    opacity: 1;
 }
 
 @keyframes show-fade-to-bottom {
