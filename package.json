@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.0.0",
   "scripts": {
-    "git": "git add . && git commit -m 'Update' && git pull && git push -all",
+    "git": "git add . && git commit -m 'Update' && git pull && git push --all",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
