@@ -8,43 +8,43 @@
             </div>
         </div>
         <div id="sec-btn-g" class="collapse" id="nav-items" [ngClass]="show ? 'show' : 'hide'">
-            <div>
+            <div (click)="scrollTo('home')">
                 <div class="sec-btn p-1 w-4r h-4r flex align-center justify-center tooltip-right">
                     <span class="text-white">
                         <i class="fa-solid fa-home"></i>
                     </span>
                     <div class="tooltip-content shadow-sm">
-                        <p class="m-0">Inicio</p>
+                        <p class="m-0">Home</p>
                     </div>
                 </div>
             </div>
-            <div>
+            <div (click)="scrollTo('about')">
                 <div class="sec-btn p-1 w-4r h-4r flex align-center justify-center tooltip-right">
                     <span class="text-white">
                         <i class="fa-solid fa-info-circle"></i>
                     </span>
                     <div class="tooltip-content shadow-sm">
-                        <p class="m-0">Información</p>
+                        <p class="m-0">About</p>
                     </div>
                 </div>
             </div>
-            <div>
+            <div (click)="scrollTo('skills')">
                 <div class="sec-btn p-1 w-4r h-4r flex align-center justify-center tooltip-right">
                     <span class="text-white">
                         <i class="fa-solid fa-clipboard-list"></i>
                     </span>
                     <div class="tooltip-content shadow-sm">
-                        <p class="m-0">Proyectos</p>
+                        <p class="m-0">Skills</p>
                     </div>
                 </div>
             </div>
-            <div>
+            <div (click)="scrollTo('contact')">
                 <div class="sec-btn p-1 w-4r h-4r flex align-center justify-center tooltip-right">
                     <span class="text-white">
                         <i class="fa-solid fa-id-card"></i>
                     </span>
                     <div class="tooltip-content shadow-sm">
-                        <p class="m-0">Contacto</p>
+                        <p class="m-0">contact</p>
                     </div>
                 </div>
             </div>

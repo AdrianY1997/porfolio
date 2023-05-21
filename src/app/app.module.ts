@@ -13,6 +13,10 @@ import { AboutComponent } from './section/about/about.component';
 import { ServicesComponent } from './section/services/services.component';
 import { PortfolioComponent } from './section/portfolio/portfolio.component';
 import { PricingComponent } from './section/pricing/pricing.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { PortfolioPageComponent } from './pages/projects/portfolio-page/portfolio-page.component';
+import { DiscordBotPageComponent } from './pages/projects/discord-bot-page/discord-bot-page.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,10 @@ import { PricingComponent } from './section/pricing/pricing.component';
     ServicesComponent,
     PortfolioComponent,
     PricingComponent,
+    HomePageComponent,
+    PortfolioPageComponent,
+    DiscordBotPageComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,

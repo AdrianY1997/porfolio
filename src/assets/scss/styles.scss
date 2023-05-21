@@ -43,10 +43,11 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 
 }
 
 .collapse.show {
-    animation-name: show-fade-to-bottom;
-    animation-timing-function: ease-in-out;
+    animation-name: show-fade-to-bottom;    
+    animation-timing-function: cubic-bezier(0.55, 0.09, 0.68, 0.53);
     animation-duration: .5s;
     height: auto;
+    max-height: 96px;
 }
 
 .collapse.hide {
@@ -137,13 +138,64 @@ text-decoration: none;
     opacity: 1;
 }
 
+.about-text {
+    overflow-y: hidden;
+}
+
+#skills .title-container {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    border-right: 2px solid lightgrey;
+    padding: 2px;
+    .title {
+        writing-mode: vertical-rl;
+    }
+}
+
+#skills .hover-all {
+
+    cursor: pointer;
+
+    &:hover img{
+        transform: scale(1.2);
+    }
+}
+
+#skills .images-container {
+
+    .image-container {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        box-shadow: 0 0 5px 0 lightgrey;
+        padding: 5px;
+        border-radius: 5px;
+
+        margin: .5rem;
+        cursor: pointer;
+        
+
+        &:hover img {
+            transform: scale(1.2);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            transition: .5s;
+        }
+    }
+}
+
 @keyframes show-fade-to-bottom {
     0% {
         height: 0;
     }
 
     99% {
-        height: 130px;
+        height: 96px;
     }
 
     100% {
@@ -153,7 +205,7 @@ text-decoration: none;
 
 @keyframes hide-fade-to-top {
     0% {
-        height: 130px;
+        height: 96px;
     }
 
     100% {

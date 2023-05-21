@@ -22,7 +22,7 @@ export class AppComponent {
           setTimeout(() => {
             this.hide = 'd-none'    
           }, 500);
-        }, 3000);
+        }, 5000);
       }
     })
   }
