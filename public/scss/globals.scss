@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.logo-container:hover p {
+    transform: scaleX(1.1) translateX(3px);
+}

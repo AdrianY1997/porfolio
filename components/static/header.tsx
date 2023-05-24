@@ -5,42 +5,44 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../../public/img/HappyFox2.jpg";
 import Link from "next/link";
 import { Image } from "@chakra-ui/next-js";
-import { Text } from "@chakra-ui/react";
+import { Button, Icon, IconButton, Text } from "@chakra-ui/react";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Component } from "react";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FaIcon } from "../faicon";
 
 interface IState {
   isHovered: boolean;
   handleHover: any;
 }
-export class Header extends Component<{}, IState> {
+
+export class NavBar extends Component<{}, IState> {
   constructor(props: Array<any>) {
     super(props);
-
-    this.state = {
-      isHovered: false,
-      handleHover: this.handleHover.bind(this),
-    };
-  }
-
-  handleHover() {
-    this.setState({
-      isHovered: !this.state.isHovered,
-    });
   }
 
   render() {
-    const btnClass = this.state.isHovered ? "scale-110" : "";
+    return (
+      <nav>
+        <FaIcon icon={faBars} />
+      </nav>
+    );
+  }
+}
 
+export class Header extends Component<{}, IState> {
+  constructor(props: Array<any>) {
+    super(props);
+  }
+
+  render() {
     return (
       <header className="rounded-b-xl shadow-md shadow-gray-300">
         <div className="flex container mx-auto py-2 justify-between items-center">
           <div>
             <Link
               href={"#"}
-              className="flex items-center"
-              onMouseEnter={this.state.handleHover}
-              onMouseLeave={this.state.handleHover}
+              className="flex items-center logo-container"
             >
               <Image
                 src={logo}
@@ -52,7 +54,7 @@ export class Header extends Component<{}, IState> {
                 fontSize="15"
                 fontWeight="400"
                 letterSpacing="1px"
-                className={`${btnClass} ms-2  transition-all`}
+                className="ms-2  transition-all"
               >
                 Portfolio
               </Text>
@@ -60,15 +62,12 @@ export class Header extends Component<{}, IState> {
           </div>
           <div>
             <Link href="#">
-              <FontAwesomeIcon
-                className="hover:scale-110"
-                icon={faGithub}
-                style={{ fontSize: 15 }}
-              />
+              <FaIcon icon={faGithub} className="hover:scale-110" />
             </Link>
           </div>
         </div>
-      </header>
+        <NavBar />
+      </header >
     );
   }
 }
