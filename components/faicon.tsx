@@ -4,12 +4,16 @@ import { Component, ReactNode } from "react";
 
 interface IState {
     icon: IconDefinition,
-    className: string | null
+    className?: string,
+    color?: string,
+    fontSize?: string
 }
 
 interface IProps {
     icon: IconDefinition
-    className: string | null
+    className?: string,
+    color?: string,
+    fontSize?: string
 }
 
 export class FaIcon extends Component<IProps, IState> {
@@ -18,13 +22,15 @@ export class FaIcon extends Component<IProps, IState> {
 
         this.state = {
             icon: props.icon,
-            className: props.className ?? null
+            className: props.className,
+            color: props.color,
+            fontSize: props.fontSize
         }
     }
 
     render() {
         return (
-            <FontAwesomeIcon icon={this.state.icon} fontSize={"15px"} className={this.state.className ?? ""} />
+            <FontAwesomeIcon icon={this.state.icon} fontSize={ this.state.fontSize ?? "16px"} className={this.state.className} color={this.state.color} />
         );
     }
 }

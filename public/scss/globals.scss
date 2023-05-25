@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-.logo-container:hover p {
-    transform: scaleX(1.1) translateX(3px);
+.logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15px;
+    width: 45px;
+    height: 45px;
+}
+
+.tooltip {
+    background-color: var(--bg-color);
+    color: #fff;
+    text-align: center;
+    padding: 2px 5px;
+    border-radius: 6px;
+}
+
+.tooltip-left {
+    border-color: var(--bg-color);
+    &::after {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        right: 100%; /* To the left of the tooltip */
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent transparent inherit;
+    }
 }
