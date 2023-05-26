@@ -11,6 +11,8 @@ import {
   faBars,
   faContactCard,
   faHome,
+  faInfo,
+  faQuestion,
 } from "@fortawesome/free-solid-svg-icons";
 import { FaIcon } from "../faicon";
 import { TooltipRight } from "../tooltip-right";
