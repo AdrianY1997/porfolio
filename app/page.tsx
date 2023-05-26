@@ -1,12 +1,20 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Section } from "@/components/section";
+import { ContactSection } from "@/components/web/home/contactSection";
+import { HomeSection } from "@/components/web/home/homeSection";
 
 export default function Home() {
   return (
-    <main
-      className="flex flex-col items-center justify-between p-24"
-      style={{ height: "calc(100vh - 87px)" }}
-    ></main>
+    <main className="bg-gray-200">
+      <div>
+        <Section removeTop>
+          <HomeSection />
+        </Section>
+        <Section>
+          <ContactSection />
+        </Section>
+      </div>
+    </main>
   );
 }

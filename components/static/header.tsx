@@ -2,20 +2,15 @@
 
 import logo from "../../public/img/HappyFox2.jpg";
 import Link from "next/link";
-import { motion, spring } from "framer-motion";
+import { motion } from "framer-motion";
 import { Image } from "@chakra-ui/next-js";
-import { Button, List, ListItem, Text, Tooltip } from "@chakra-ui/react";
-import {
-  faGithub,
-  faLinkedin,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
-import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
+import { Text } from "@chakra-ui/react";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { useEffect, useRef, useState } from "react";
 import {
   faBars,
+  faContactCard,
   faHome,
-  faInfo,
-  faQuestion,
 } from "@fortawesome/free-solid-svg-icons";
 import { FaIcon } from "../faicon";
 import { TooltipRight } from "../tooltip-right";
@@ -24,8 +19,6 @@ type NavBarProps = {
   headerHeight: number;
 };
 export const NavBar = (props: NavBarProps) => {
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [visible, setVisible] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
   const [showNavBar, setShowNavBar] = useState(false);
 
@@ -51,7 +44,6 @@ export const NavBar = (props: NavBarProps) => {
       setShowNavBar(false);
       setShowMenu(false);
     }
-    setPrevScrollPos(currentScrollPos);
   };
 
   useEffect(() => {
@@ -101,29 +93,7 @@ export const NavBar = (props: NavBarProps) => {
                 type="button"
                 className="p-2 hover:scale-125"
               >
-                <FaIcon icon={faInfo} fontSize="10px" color="white" />
-              </button>
-            </TooltipRight>
-          </div>
-          <div>
-            <TooltipRight label="text">
-              <button
-                title="text"
-                type="button"
-                className="p-2 hover:scale-125"
-              >
-                <FaIcon icon={faQuestion} fontSize="10px" color="white" />
-              </button>
-            </TooltipRight>
-          </div>
-          <div>
-            <TooltipRight label="text">
-              <button
-                title="text"
-                type="button"
-                className="p-2 hover:scale-125"
-              >
-                <FaIcon icon={faQuestion} fontSize="10px" color="white" />
+                <FaIcon icon={faContactCard} fontSize="10px" color="white" />
               </button>
             </TooltipRight>
           </div>
