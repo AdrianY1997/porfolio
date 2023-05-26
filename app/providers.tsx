@@ -3,10 +3,13 @@
 import { CacheProvider } from "@chakra-ui/next-js";
 import { ChakraProvider } from "@chakra-ui/react";
 
-export function Providers({ children }: { children: React.ReactNode }) {
+type ProviderProps = {
+  children: React.ReactNode;
+};
+export function Providers(props: ProviderProps) {
   return (
     <CacheProvider>
-      <ChakraProvider>{children}</ChakraProvider>
+      <ChakraProvider>{props.children}</ChakraProvider>
     </CacheProvider>
   );
 }

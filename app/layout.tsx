@@ -1,8 +1,12 @@
+"use client";
+
 import { Inter } from "next/font/google";
 import { Providers } from "./providers";
 
 import "./../public/css/globals.css";
 import { Header } from "@/components/static/header";
+import { Footer } from "@/components/static/footer";
+import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,11 +20,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const [headerHeight, setHeaderHeight] = useState(0);
+  const [footerHeight, setFooterHeight] = useState(0);
+
   return (
     <html lang="en">
-      <body>
+      <body style={{ minHeight: "100vh" }}>
         <Header />
         <Providers>{children}</Providers>
+        <Footer />
       </body>
     </html>
   );

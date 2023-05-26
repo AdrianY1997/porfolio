@@ -10,7 +10,7 @@ import {
   faLinkedin,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
-import { useEffect, useRef, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import {
   faBars,
   faHome,
@@ -139,7 +139,8 @@ export const Header = () => {
 
   useEffect(() => {
     if (headerRef.current) {
-      setHeaderHeight(headerRef.current.getBoundingClientRect().height);
+      const height = headerRef.current.getBoundingClientRect().height;
+      setHeaderHeight(height);
     }
   }, []);
 
