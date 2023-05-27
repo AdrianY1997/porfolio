@@ -1,21 +1,22 @@
 "use client";
 
-import { FormBuilder } from "@/components/formBuilder";
 import { Section } from "@/components/section";
+import { AboutSection } from "@/components/web/home/aboutSection";
 import { ContactSection } from "@/components/web/home/contactSection";
 import { HomeSection } from "@/components/web/home/homeSection";
 
-export default function Home() {
+export default function Page() {
   return (
-    <main className="bg-gray-200">
-      <div>
-        <Section removeTop>
-          <HomeSection />
-        </Section>
-        <Section>
-          <ContactSection />
-        </Section>
-      </div>
-    </main>
+    <div className="bg-[#f5f5f5]">
+      <Section removeTop>
+        <HomeSection />
+      </Section>
+      <Section>
+        <AboutSection />
+      </Section>
+      <Section>
+        <ContactSection />
+      </Section>
+    </div>
   );
 }

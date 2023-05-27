@@ -11,8 +11,6 @@ import {
   faBars,
   faContactCard,
   faHome,
-  faInfo,
-  faQuestion,
 } from "@fortawesome/free-solid-svg-icons";
 import { FaIcon } from "../faicon";
 import { TooltipRight } from "../tooltip-right";
@@ -124,13 +122,17 @@ export const Header = () => {
             type="button"
             className="py-1 px-2 hover:bg-slate-100 transition duration-500 rounded-md tracking-wider"
           >
-            <Text className="text-lg/loose font-light">Home</Text>
+            <Text className="text-lg/loose font-light">
+              <Link href={"/"}>Home</Link>
+            </Text>
           </button>
           <button
             type="button"
             className="py-1 px-2 hover:bg-slate-100 transition duration-500 rounded-md tracking-wider"
           >
-            <Text className="text-lg/loose font-light">Projects</Text>
+            <Text className="text-lg/loose font-light">
+              <Link href={"/dashboard"}>Dashboard</Link>
+            </Text>
           </button>
         </div>
         <div className="logo-container">

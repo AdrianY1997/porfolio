@@ -1,10 +1,4 @@
-import {
-  Button,
-  FormControl,
-  FormLabel,
-  Input,
-  Textarea,
-} from "@chakra-ui/react";
+import { FormControl, FormLabel, Input, Textarea } from "@chakra-ui/react";
 
 export const ContactSection = () => {
   return (
@@ -25,7 +19,7 @@ export const ContactSection = () => {
           <Textarea placeholder=" " id="message" name="message" />
           <FormLabel bg={"white"}>Mensaje</FormLabel>
         </FormControl>
-        <button className="inline-block w-full rounded bg-red-950 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out rounded-md">
+        <button className="inline-block w-full bg-red-950 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white transition duration-150 ease-in-out rounded-md">
           Send
         </button>
       </form>

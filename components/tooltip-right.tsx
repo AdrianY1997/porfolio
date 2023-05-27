@@ -1,4 +1,4 @@
-import { PlacementWithLogical, Tooltip } from "@chakra-ui/react";
+import { Tooltip } from "@chakra-ui/react";
 
 type TooltipRightProps = {
   label: string;

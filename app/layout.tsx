@@ -1,7 +1,13 @@
-import { Inter } from "next/font/google";
+"use client";
 
+import { Inter } from "next/font/google";
+import { Header } from "@/components/static/header";
+import { Footer } from "@/components/static/footer";
+import { useEffect } from "react";
+import { tailwindTheme } from "@/components/tailwindTheme";
+import { CacheProvider } from "@chakra-ui/next-js";
+import { ChakraProvider } from "@chakra-ui/react";
 import "./../public/css/globals.css";
-import { PageContent } from "@/components/static/pagecontent";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,10 +21,43 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  let instance: HTMLDivElement;
+
+  const componentDivMount = () => {
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.async = true;
+    script.innerHTML = `
+      function resizeMain() {
+        const main = document.querySelector("main");
+        const headerHeight = document.querySelector("header").clientHeight;
+        const footerHeight = document.querySelector("footer").clientHeight;
+
+        const height = headerHeight + footerHeight;
+
+        main.style.setProperty("min-height", "calc(100vh - " + height + "px");
+      }
+      resizeMain();
+      window.addEventListener("resize", resizeMain);
+    `;
+    instance.appendChild(script);
+  };
+
+  useEffect(() => {
+    componentDivMount();
+  });
+
   return (
     <html lang="en">
       <body>
-        <PageContent>{children}</PageContent>
+        <CacheProvider>
+          <ChakraProvider theme={tailwindTheme}>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <div ref={(el) => (instance = el!)}></div>
+          </ChakraProvider>
+        </CacheProvider>
       </body>
     </html>
   );
