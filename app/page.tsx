@@ -1,5 +1,6 @@
 "use client";
 
+import { FormBuilder } from "@/components/formBuilder";
 import { Section } from "@/components/section";
 import { ContactSection } from "@/components/web/home/contactSection";
 import { HomeSection } from "@/components/web/home/homeSection";
